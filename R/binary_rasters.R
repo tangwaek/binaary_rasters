@@ -15,10 +15,6 @@ binary_rasters <- function(x, y) { # x is a vector, y is a list of raster
     stop("Please provide a numeric input")
   }
 
-  if(class(y) != "RasterStack"|| class(y) !="RasterBrick" || class(y) != "list"){
-      stop("data must be of class RasterStack or RasterBrick or a list of rasters")
-  }
-
   if(class(y) != "list"){
     y <- as.list(y)
   }

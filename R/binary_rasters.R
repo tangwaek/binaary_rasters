@@ -30,7 +30,6 @@ binary_rasters <- function(x, y) { # x is a vector, y is a list of raster
     stop("`x` and `y` must be the same length", call. = FALSE)
   }
 
-
   binary_list <- list()
   for (i in seq_along(y)) {
     binary_list[[i]] <- matrix(c(0, y[i], 0, y[i],1, 1),

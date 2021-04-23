@@ -15,13 +15,12 @@ binary_rasters <- function(x, y) { # x is a vector, y is a list of raster
     stop("Please provide a numeric input")
   }
 
-  if(class(y) != "list"){
+ if(class(y) != "list"){
     y <- as.list(y)
-  }
-
-  for (i in seq_along(y)) {
+   for (i in seq_along(y)) {
      if(class(i) !=raster)
      stop("elments of the list must be raster layers")
+    }
   }
 
   if (length(x) != length(y)) {

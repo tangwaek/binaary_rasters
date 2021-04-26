@@ -50,7 +50,7 @@ binary_rasters <- function(x, y) { # x is list a raster, y is a vector
   par(mfrow =c(1, 2))
 
   # map plot
-  plot(map_sum,
+  sp::plot(map_sum,
        main= "species diversity map")
 
   # pie chart

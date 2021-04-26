@@ -9,6 +9,7 @@ Description: This packages lets you classifies many rastersinto binary map.
     The package also stacks binary maps and map a gggplot of better visualization. 
     Finally the calculates the average area covered occupied by all the species you
     your have modeled 
+Imports: purrr, raster, sp
 Suggests: purrr, raster, sp
 License: GPL-3
 Encoding: UTF-8
